@@ -8,7 +8,7 @@ import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import imageio
 
-hp_path, gt_path = "Self-Correction-Human-Parsing/outputs/9_im.png", "human/9_im.jpg"
+hp_path, gt_path = "examples/parsing_original.png", "examples/im.jpg"
 im, mask = np.array(Image.open(gt_path).convert('RGB')), np.array(Image.open(hp_path).convert('L'))
 
 from mask_refiner import MultiClassSegmRefiner
